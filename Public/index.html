@@ -1,0 +1,11 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Raymond & Emma Poker</title><link rel="stylesheet" href="/style.css"></head>
+<body><div id="join" class="card join"><h1>♠ Private Poker</h1><p>8-handed $2/$5 · $500 stacks · 6 bots</p>
+<input id="code" value="EMMA01" maxlength="12" placeholder="Room code">
+<div class="names"><button onclick="join('Raymond')">I'm Raymond</button><button onclick="join('Emma')">I'm Emma</button></div>
+<small>Use the same room code on both phones.</small></div>
+<div id="game" class="hidden"><header><b id="room"></b><span id="hand"></span></header>
+<div class="table"><div id="players" class="players"></div><div class="center"><div id="board" class="board"></div><div id="pot"></div><div id="street"></div></div></div>
+<div id="status"></div><div id="actions" class="actions"></div><div id="log" class="log"></div></div>
+<script src="/socket.io/socket.io.js"></script><script src="/app.js"></script></body></html>
